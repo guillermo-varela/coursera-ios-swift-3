@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Book_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" prompt="Ingresa el ISBN del libro que buscas:" placeholder="ISBN" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-r9-y3q">
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PcD-ga-Ss9"/>
+                                </connections>
+                            </searchBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KFw-0M-7sT">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KFw-0M-7sT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LF2-Ey-wde"/>
+                            <constraint firstItem="4kh-r9-y3q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fhF-fP-USM"/>
+                            <constraint firstItem="KFw-0M-7sT" firstAttribute="top" secondItem="4kh-r9-y3q" secondAttribute="bottom" constant="13" id="msO-2z-ePh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KFw-0M-7sT" secondAttribute="bottom" constant="338" id="n0i-cH-dGj"/>
+                            <constraint firstItem="4kh-r9-y3q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qP9-In-JTp"/>
+                            <constraint firstItem="4kh-r9-y3q" firstAttribute="centerX" secondItem="KFw-0M-7sT" secondAttribute="centerX" id="rfc-gh-WBZ"/>
+                            <constraint firstItem="KFw-0M-7sT" firstAttribute="leading" secondItem="4kh-r9-y3q" secondAttribute="leading" constant="16" id="wED-3s-Wxt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookTextView" destination="KFw-0M-7sT" id="aiz-vo-J2z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
