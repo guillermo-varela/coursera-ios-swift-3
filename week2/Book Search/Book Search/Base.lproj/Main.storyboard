@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Book_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" prompt="Ingresa el ISBN del libro que buscas:" placeholder="ISBN" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-r9-y3q">
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PcD-ga-Ss9"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4J-ZD-Wr0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="PSt-1d-YL3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZ4-Yx-ALv">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="282" id="i6F-UY-blG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="sgp-0x-g2J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autores:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmC-gW-n9H">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A71-1M-g1q">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="271" id="L99-UV-OjU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="RL4-u8-LJU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unD-bZ-Lp3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="145" translatesAutoresizingMaskIntoConstraints="NO" id="Mhk-dP-9sq"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="89" placeholderIntrinsicHeight="21" text="Sin portada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMW-4t-UWI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i4J-ZD-Wr0" firstAttribute="top" secondItem="4kh-r9-y3q" secondAttribute="bottom" constant="13" id="83D-6H-NXt"/>
+                            <constraint firstItem="Mhk-dP-9sq" firstAttribute="leading" secondItem="i4J-ZD-Wr0" secondAttribute="leading" id="865-GP-KkE"/>
+                            <constraint firstItem="A71-1M-g1q" firstAttribute="leading" secondItem="cmC-gW-n9H" secondAttribute="trailing" constant="8" symbolic="YES" id="9L8-91-JgV"/>
+                            <constraint firstItem="cmC-gW-n9H" firstAttribute="centerX" secondItem="unD-bZ-Lp3" secondAttribute="centerX" id="Cph-Qs-Be3"/>
+                            <constraint firstItem="4kh-r9-y3q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D8a-Uh-IyY"/>
+                            <constraint firstItem="SZ4-Yx-ALv" firstAttribute="leading" secondItem="i4J-ZD-Wr0" secondAttribute="trailing" constant="8" symbolic="YES" id="J7Z-Nk-3yg"/>
+                            <constraint firstItem="CMW-4t-UWI" firstAttribute="centerY" secondItem="unD-bZ-Lp3" secondAttribute="centerY" id="Lyj-IV-lww"/>
+                            <constraint firstItem="cmC-gW-n9H" firstAttribute="leading" secondItem="i4J-ZD-Wr0" secondAttribute="leading" id="QM1-X4-fJB"/>
+                            <constraint firstItem="Mhk-dP-9sq" firstAttribute="centerX" secondItem="4kh-r9-y3q" secondAttribute="centerX" id="RTu-Gi-85S"/>
+                            <constraint firstItem="A71-1M-g1q" firstAttribute="centerY" secondItem="cmC-gW-n9H" secondAttribute="centerY" id="UCN-fa-vV2"/>
+                            <constraint firstItem="i4J-ZD-Wr0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cbx-rg-1sh"/>
+                            <constraint firstAttribute="trailing" secondItem="4kh-r9-y3q" secondAttribute="trailing" id="dxH-rU-R3d"/>
+                            <constraint firstItem="CMW-4t-UWI" firstAttribute="leading" secondItem="unD-bZ-Lp3" secondAttribute="trailing" constant="8" symbolic="YES" id="eB0-Y6-TiK"/>
+                            <constraint firstItem="unD-bZ-Lp3" firstAttribute="leading" secondItem="i4J-ZD-Wr0" secondAttribute="leading" id="evn-Al-z81"/>
+                            <constraint firstItem="i4J-ZD-Wr0" firstAttribute="baseline" secondItem="SZ4-Yx-ALv" secondAttribute="baseline" id="fks-PK-qbV"/>
+                            <constraint firstItem="unD-bZ-Lp3" firstAttribute="top" secondItem="cmC-gW-n9H" secondAttribute="bottom" constant="8" symbolic="YES" id="jX0-3K-spM"/>
+                            <constraint firstItem="SZ4-Yx-ALv" firstAttribute="centerY" secondItem="i4J-ZD-Wr0" secondAttribute="centerY" id="muI-3C-iZb"/>
+                            <constraint firstItem="cmC-gW-n9H" firstAttribute="top" secondItem="i4J-ZD-Wr0" secondAttribute="bottom" constant="8" symbolic="YES" id="nnq-0M-kSS"/>
+                            <constraint firstItem="cmC-gW-n9H" firstAttribute="baseline" secondItem="A71-1M-g1q" secondAttribute="baseline" id="tlS-Ra-7Ri"/>
+                            <constraint firstItem="Mhk-dP-9sq" firstAttribute="top" secondItem="unD-bZ-Lp3" secondAttribute="bottom" constant="8" symbolic="YES" id="tw5-bu-wNo"/>
+                            <constraint firstItem="4kh-r9-y3q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="w9H-c1-GPa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorsLabel" destination="A71-1M-g1q" id="jVT-7N-kn2"/>
+                        <outlet property="coverImageView" destination="Mhk-dP-9sq" id="QhV-Ox-bMh"/>
+                        <outlet property="noCoverLabel" destination="CMW-4t-UWI" id="AY3-rC-6J4"/>
+                        <outlet property="titleLabel" destination="SZ4-Yx-ALv" id="U9z-b2-BDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
