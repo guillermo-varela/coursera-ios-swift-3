@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DF7F752B1DBC1AB800299A9F"
-               BuildableName = "Book Search.app"
-               BlueprintName = "Book Search"
-               ReferencedContainer = "container:Book Search.xcodeproj">
+               BlueprintIdentifier = "DFA2302A1DC5B1000084656D"
+               BuildableName = "BookSearch.app"
+               BlueprintName = "BookSearch"
+               ReferencedContainer = "container:BookSearch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DF7F752B1DBC1AB800299A9F"
-            BuildableName = "Book Search.app"
-            BlueprintName = "Book Search"
-            ReferencedContainer = "container:Book Search.xcodeproj">
+            BlueprintIdentifier = "DFA2302A1DC5B1000084656D"
+            BuildableName = "BookSearch.app"
+            BlueprintName = "BookSearch"
+            ReferencedContainer = "container:BookSearch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DF7F752B1DBC1AB800299A9F"
-            BuildableName = "Book Search.app"
-            BlueprintName = "Book Search"
-            ReferencedContainer = "container:Book Search.xcodeproj">
+            BlueprintIdentifier = "DFA2302A1DC5B1000084656D"
+            BuildableName = "BookSearch.app"
+            BlueprintName = "BookSearch"
+            ReferencedContainer = "container:BookSearch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DF7F752B1DBC1AB800299A9F"
-            BuildableName = "Book Search.app"
-            BlueprintName = "Book Search"
-            ReferencedContainer = "container:Book Search.xcodeproj">
+            BlueprintIdentifier = "DFA2302A1DC5B1000084656D"
+            BuildableName = "BookSearch.app"
+            BlueprintName = "BookSearch"
+            ReferencedContainer = "container:BookSearch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
